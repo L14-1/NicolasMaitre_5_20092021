@@ -1,0 +1,56 @@
+.aLink, .aLink:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.aLink:hover {
+    background-color: #f2f2f2;
+}
+
+.fa-check {
+    color : rgb(65, 160, 65);
+}
+
+#thanksBody {
+    height: 100vh;
+}
+
+.centeredSection {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoWidth {
+    width: 8rem;
+}
+
+#addToCartAnimId {
+    position : absolute;
+    z-index : 10;
+    right: 2rem;
+    top : 5rem;
+    padding : 1rem;
+    border : 0.2rem solid rgb(65, 160, 65);
+    background-color: white;
+    border-radius: 0.7rem;
+}
+
+.addToCartAnim {
+    opacity: 0;
+
+    transition: opacity 2s;
+}
+
+.addToCartAnimated {
+    opacity: 1;
+
+    transition: opacity 1s;
+}
+
+.minusButton, .plusButton {
+    border-radius: 2.5em;
+    width : 2.3em
+}

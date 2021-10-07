@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/a2f4b8af3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Orinoco</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <nav class="col navbar navbar-expand-md navbar-dark">
+                    <a class="navbar-brand" href="index.html"><img src="orinocoTextLogo.png" class="logoWidth" alt="Orinoco"></a>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html"><i class="fas fa-shopping-basket"></i> Panier <span id="quantityTotal">0</span></a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header End -->
+
+    <!-- Main content -->
+
+    <div id="addToCartAnimId" class="addToCartAnim">
+        <i class="fas fa-check"></i> Article ajouté au panier !
+    </div>
+
+    <!-- Cards -->
+
+    <section class="container col-lg-4 mt-5" id="doNotDisplayIf404">
+        <div class="card border-info mb-5 text-center" id="insideContainer">
+            <img id="productImage" class="card-img-top" src="#" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title" id="productTitle">Camera n°1</h5>
+                <p class="card-text" id="productText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+                    perspiciatis nesciunt et in veritatis voluptates voluptate suscipit, dolorem non
+                    reprehenderit officia, eius molestiae ipsum, facilis quis autem. Repellendus, facere unde?
+                </p>
+                <form id="form">
+                    <select class="browser-default custom-select mb-3" id="selectDiv">
+                        <option selected value="lensesChoice">Choisissez votre lentille</option>
+                    </select>
+                    <h5 class="card-price" id="productPrice">50€</h5>
+                    <button type="submit" id="addToCart" class="btn btn-primary mb-3 mt-3">ajouter au panier <i
+                            class="fas fa-shopping-basket"></i></button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Cards End-->
+
+    <!-- Footer -->
+
+    <footer class="bg-light text-center" id="footer">
+        <div class="container p-4">
+            <div class="row">
+
+                <div>
+                    <h5 class="text-uppercase">Footer text</h5>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                        aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3 bg-dark text-white">
+            © 2021 Copyright: Orinoco
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- JS library -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- JS library -->
+
+    <script src="product.js"></script>
+    <script src="cartQuantity.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/a2f4b8af3a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Orinoco - Panier</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <nav class="col navbar navbar-expand-md navbar-dark">
+                    <a class="navbar-brand" href="index.html"><img src="orinocoTextLogo.png" class="logoWidth" alt="Orinoco"></a>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="cart.html"><i class="fas fa-shopping-basket"></i> Panier <span id="quantityTotal">0</span></a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header End -->
+
+    <!-- Main content -->
+
+    <div class="container pb-5" id="container">
+        <div class="row m-3" id="containerChild">
+            <div class="col-lg-4 order-md-2 mb-4">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Votre panier</span>
+                </h4>
+                <ul class="list-group mb-3" id="basket">
+                    <li class="list-group-item d-flex justify-content-between totalCart">
+                        <span>Total</span>
+                        <strong><span id="totalPrice"> 0 </span> €</strong>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-lg-8 order-md-1">
+                <h4 class="mb-3">Adresse de facturation</h4>
+                <form class="needs-validation" id="commandForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">Prénom</label>
+                            <input type="text" class="form-control" id="firstName" pattern="[a-zA-Z]+" name="firstName" required>
+                            <div class="invalid-feedback">
+                                Un prénom valide est requis.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Nom</label>
+                            <input type="text" class="form-control" id="lastName" pattern="[a-zA-Z]+" name="lastName" required>
+                            <div class="invalid-feedback">
+                                Un nom valide est requis.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="invalid-feedback">
+                            Une adresse email est requise.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address">Adresse</label>
+                        <input type="text" class="form-control" id="address" name="address" required>
+                        <div class="invalid-feedback">
+                            Merci d'entrer votre adresse de livraison.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="city">Ville</label>
+                        <input type="text" class="form-control" name="city" id="city" pattern="[a-zA-Z]+" required>
+                        <div class="invalid-feedback">
+                            Veuillez indiquer votre ville.
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary col-12">Commander </button>
+
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content End -->
+
+    <!-- Footer -->
+
+    <footer class="bg-light text-center text-lg-start fixed-bottom" id="footer">
+
+        <div class="text-center p-3 bg-dark text-white">
+            © 2021 Copyright: Orinoco
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- JS library -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- JS library -->
+
+    <script src="cart.js"></script>
+
+</body>
+
+</html>
