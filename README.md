@@ -28,6 +28,6 @@ Création d'une
   commande, et indiquant le prix total et l'identifiant de commande envoyé
   par le serveur.
 
-                     --- / ! \ ---
+--- / ! \ ---
 Pour le bon fonctionnement du site Orinoco il faut cloner :
 https://github.com/OpenClassrooms-Student-Center/JWDP5
