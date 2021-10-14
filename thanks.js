@@ -1,3 +1,5 @@
+setTimeout(ThanksPage, 1000);
+
 function ThanksPage () {
 
     // récupération de l'order ID et attribution dans l'HTML
@@ -15,5 +17,6 @@ function ThanksPage () {
     window.localStorage.removeItem('orderId')
     window.localStorage.removeItem('orderPrice')
     window.localStorage.removeItem('products')
+    window.localStorage.removeItem('quantityTotal')
 
 }
