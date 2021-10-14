@@ -240,7 +240,6 @@ if (products.length < 1) {
 
     commandForm.addEventListener('submit', (e) => {
 
-        console.log(commandForm)
         if (commandForm.checkValidity() === false) {
 
             e.preventDefault()
@@ -289,7 +288,7 @@ if (products.length < 1) {
 
         }
 
-        commandForm[0].classList.add('was-validated');
+        commandForm.classList.add('was-validated');
 
     });
 }
